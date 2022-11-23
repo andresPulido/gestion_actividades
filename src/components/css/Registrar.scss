@@ -1,0 +1,36 @@
+div.registrar {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+
+}
+
+input[type=text] {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    width: 10%;
+    background-color: #2196F3;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #1e77c0;
+    height: 40px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #1e77c0;
+}
+
+input[type=text]:focus {
+    background-color: rgb(240, 255, 175);
+    outline: 1px solid #1e77c0;
+}

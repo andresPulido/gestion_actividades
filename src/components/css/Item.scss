@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    font-size: 12px;
+}
+
+label:hover {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    background: #c9c8c8;
+    position: relative;
+    overflow: hidden;
+}
+
+label {
+    padding: 3px;
+    cursor: pointer;
+    min-height: 30px;
+    background: #ffffff;
+    text-decoration: none;
+    color: #777;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+label {
+    display: block;
+    position: relative;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    padding-left: 45px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+label:hover input~span {
+    background-color: rgb(240, 240, 240);
+}
+
+/* When the checkbox is checked, add a blue background */
+label input:checked~span {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+span:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+label input:checked~span:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+label span:after {
+    left: 12px;
+    top: 3px;
+    width: 10px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+ul.scroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    background-color: rgb(160, 70, 70);
+    width: 500px;
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
